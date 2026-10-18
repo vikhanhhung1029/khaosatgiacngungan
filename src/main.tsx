@@ -13,7 +13,14 @@ class AppErrorBoundary extends React.Component<
     return { error };
   }
 
+  componentDidMount() {
+    document.documentElement.dataset.appBooted = 'true';
+    const bootError = document.getElementById('boot-error');
+    if (bootError) bootError.style.display = 'none';
+  }
+
   componentDidCatch(error: Error, info: React.ErrorInfo) {
+    document.documentElement.dataset.appBooted = 'true';
     console.error('Website render failed:', error, info.componentStack);
   }
 
