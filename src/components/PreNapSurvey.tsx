@@ -566,7 +566,7 @@ export const PreNapSurvey: React.FC<PreNapSurveyProps> = ({
           <ArrowRight className="w-4 h-4" />
         </button>
         <p className="text-center text-[11px] text-slate-500 mt-2">
-          (Bài 1: Phản ứng nhanh · Bài 2: Chú ý 10 chữ A (30s) · Bài 3: Trí nhớ 7 số)
+          (Bài 1: Phản ứng nhanh · Bài 2: Chú ý 10 chữ A (10s) · Bài 3: Trí nhớ 7 số)
         </p>
       </div>
     </form>
