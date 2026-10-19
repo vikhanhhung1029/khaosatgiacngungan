@@ -4,8 +4,8 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig({
-  // GitHub Pages publishes this project below /khaosatgiacngungan/.
-  base: '/khaosatgiacngungan/',
+  // A custom domain serves the Vite app from the domain root.
+  base: '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
